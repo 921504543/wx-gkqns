@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/page1/page1",
+    "pages/page1/searchBus/searchBus",
+    "pages/page2/page2",
+    "pages/logs/logs",
+    "pages/page1/calendar/calendar",
+    "pages/page1/ClassRoom/ClassRoom"
+  ],
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "icon/document.png",
+        "selectedIconPath": "icon/document_fill.png"
+      },
+      {
+        "text": "功能",
+        "pagePath": "pages/page1/page1",
+        "iconPath": "icon/order.png",
+        "selectedIconPath": "icon/order_fill.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/page2/page2",
+        "iconPath": "icon/people.png",
+        "selectedIconPath": "icon/people_fill.png"
+      }
+    ]
+  }
+}

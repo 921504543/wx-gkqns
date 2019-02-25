@@ -1,0 +1,7 @@
+  <!--pages/page1/ClassRoom/ClassRoom.wxml-->
+<view wx:for="{{ClassRoom}}"wx:key="ClassRoom">
+    <view>教室号：{{item.cno}}</view>
+    <view>是否已申：{{item.has_t_f}}</view>
+    <view>时间：{{item.time}}</view>
+</view>
+<button type='primary' bindtap='send'>请求数据</button>

@@ -1,0 +1,4 @@
+<!--pages/page1.wxml-->
+<button bindtap='touchbar'>查校车</button>
+<button bindtap='TouchCalbar'>校历</button>
+<button bindtap='TouchClsbar'>教室申请情况</button>

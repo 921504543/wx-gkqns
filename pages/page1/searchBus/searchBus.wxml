@@ -1,0 +1,42 @@
+<view class="weui-cell weui-cell_select">
+  <view class="weui-cell__hd weui-cell__hd_in-select-after">
+       <view class="weui-label">起点</view>
+   </view>
+   <view class="weui-cell__bd">
+         <picker bindchange="bindAreaChange" value="{{AreaIndex}}" range="{{Areas}}">
+            <view class="weui-select weui-select_in-select-after">{{Areas[AreaIndex]}}</view>
+          </picker>
+    </view>
+ </view>
+
+ <view class="weui-cell weui-cell_select">
+  <view class="weui-cell__hd weui-cell__hd_in-select-after">
+       <view class="weui-label">终点</view>
+   </view>
+   <view class="weui-cell__bd">
+         <picker bindchange="bindAreaChange1" value="{{AreaIndex1}}" range="{{Areas1}}">
+            <view class="weui-select weui-select_in-select-after">{{Areas1[AreaIndex1]}}</view>
+          </picker>
+    </view>
+ </view>
+
+ <view class="weui-cell weui-cell_select">
+  <view class="weui-cell__hd weui-cell__hd_in-select-after">
+       <view class="weui-label">时间</view>
+   </view>
+   <view class="weui-cell__bd">
+         <picker bindchange="bindScheduleChange" value="{{ScheduleIndex}}" range="{{Schedule}}">
+            <view class="weui-select weui-select_in-select-after">{{Schedule[ScheduleIndex]}}</view>
+          </picker>
+    </view>
+ </view>
+
+<button bindtap='search'>查询</button>
+<view wx:for="{{ScheduleArry}}" wx:for-item="ScheduleArry" wx:for-index="index" class='showView'  hidden="{{ScheduleArry.hidden}}" >
+    <text >
+    time:{{ScheduleArry.time}}
+    </text>
+    <text>
+    area:{{ScheduleArry.area}}
+    </text>
+</view>
